@@ -33,7 +33,12 @@ jobs:
               ${{ runner.os }}
       - name: Setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+      
       - name: Install Dependencies
         run: pnpm install
+
+      - name: Build
+        run: pnpm install
+
       - name: Test
         run: pnpm test:ci

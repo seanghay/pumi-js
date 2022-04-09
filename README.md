@@ -1,6 +1,6 @@
 # pumi
 
-A collection of administrative regions in Cambodia including Provinces, Districts, Communes and Villages.
+A JavaScript library for querying administrative regions in Cambodia including Provinces, Districts, Communes and Villages.
 
 > Forked from [kruyvanna/node-pumi](https://github.com/kruyvanna/node-pumi)
 
