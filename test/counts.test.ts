@@ -3,7 +3,7 @@ import { provinces, districts, communes, villages, all } from '../';
 
 describe('count administrative units', () => {
 
-  it('should return 24 provinces', () => {
+  it('should return 25 provinces', () => {
     expect(25).toBe(provinces.length);
   });
 
