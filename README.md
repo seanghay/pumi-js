@@ -1,5 +1,7 @@
 # pumi
 
+[![ci](https://github.com/seanghay/pumi-js/actions/workflows/ci.yml/badge.svg)](https://github.com/seanghay/pumi-js/actions/workflows/ci.yml)
+
 A JavaScript library for querying administrative regions in Cambodia including Provinces, Districts, Communes and Villages.
 
 > Forked from [kruyvanna/node-pumi](https://github.com/kruyvanna/node-pumi)
