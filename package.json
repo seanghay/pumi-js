@@ -10,7 +10,8 @@
     "prepublishOnly": "unbuild",
     "test": "vitest",
     "test:ci": "cross-env CI=true vitest --run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "release": "bumpp --commit --push --tag"
   },
   "keywords": [
     "pumi",
@@ -27,6 +28,7 @@
   "author": "Seanghay Yath <seanghay.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "bumpp": "^7.1.1",
     "cross-env": "^7.0.3",
     "jiti": "^1.13.0",
     "unbuild": "^0.7.2",
