@@ -1,0 +1,33 @@
+{
+  "name": "pumi",
+  "version": "0.0.1",
+  "description": "A collection of administrative regions in Cambodia including Provinces, Districts, Communes and Villages.",
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "build": "unbuild",
+    "test": "vitest",
+    "test:ci": "vitest --run",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "pumi",
+    "cambodia",
+    "khmer"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/main.cjs",
+      "import": "./dist/main.mjs",
+      "types": "./dist/main.d.ts"
+    }
+  },
+  "author": "Seanghay Yath <seanghay.dev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jiti": "^1.13.0",
+    "unbuild": "^0.7.2",
+    "vitest": "^0.9.2"
+  }
+}
