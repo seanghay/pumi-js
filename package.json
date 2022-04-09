@@ -1,6 +1,6 @@
 {
   "name": "pumi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of administrative regions in Cambodia including Provinces, Districts, Communes and Villages.",
   "main": "./dist/main.cjs",
   "module": "./dist/main.mjs",
