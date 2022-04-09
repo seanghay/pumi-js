@@ -15,9 +15,17 @@ npm i pumi
 
 ## Usage
 
+ESM
+
 ```js
 import { provinces, districts, communes, villages, all } from 'pumi'
 ```
+
+CommonJS
+```js
+const { provinces, districts, communes, villages, all } = require('pumi')
+```
+
 
 
 ## Types
