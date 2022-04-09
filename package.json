@@ -33,5 +33,13 @@
     "jiti": "^1.13.0",
     "unbuild": "^0.7.2",
     "vitest": "^0.9.2"
+  },
+  "bugs": {
+    "url": "https://github.com/seanghay/pumi-js/issues"
+  },
+  "homepage": "https://github.com/seanghay/pumi-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanghay/pumi-js.git"
   }
 }
