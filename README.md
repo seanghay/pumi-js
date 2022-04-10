@@ -13,7 +13,7 @@ npm i pumi
 ```
 
 
-## Usage
+## Usage in Node.js
 
 ESM
 
@@ -26,7 +26,34 @@ CommonJS
 const { provinces, districts, communes, villages, all } = require('pumi')
 ```
 
+## Import Individual Data
 
+ESM
+
+```js
+import provinces from 'pumi/provinces'
+import districts from 'pumi/districts'
+import communes from 'pumi/communes'
+import villages from 'pumi/villages'
+```
+
+CommonJS
+
+```js
+const provinces = require('pumi/provinces')
+const districts = require('pumi/districts')
+const communes = require('pumi/communes')
+const villages = require('pumi/villages')
+```
+
+## Browser
+
+```js
+import { provinces, districts, communes, villages, all } from 'https://unpkg.com/pumi@latest/dist/main.mjs'
+
+// Or
+const { provinces, districts, communes, villages, all } = await import("https://unpkg.com/pumi@latest/dist/main.mjs")
+```
 
 ## Types
 
