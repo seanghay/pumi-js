@@ -1,3 +1,5 @@
+import { AdministrativeDivision } from "../types";
+
 export default [
   {
     name: {
@@ -186835,4 +186837,4 @@ export default [
       en: "Village",
     },
   },
-];
+] as AdministrativeDivision[];

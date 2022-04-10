@@ -23,6 +23,26 @@
       "require": "./dist/main.cjs",
       "import": "./dist/main.mjs",
       "types": "./dist/main.d.ts"
+    },
+    "./provinces": {
+      "require": "./dist/provinces.cjs",
+      "import": "./dist/provinces.mjs",
+      "types": "./dist/provinces.d.ts"
+    },
+    "./districts": {
+      "require": "./dist/districts.cjs",
+      "import": "./dist/districts.mjs",
+      "types": "./dist/districts.d.ts"
+    },
+    "./communes": {
+      "require": "./dist/communes.cjs",
+      "import": "./dist/communes.mjs",
+      "types": "./dist/communes.d.ts"
+    },
+    "./villages": {
+      "require": "./dist/villages.cjs",
+      "import": "./dist/villages.mjs",
+      "types": "./dist/villages.d.ts"
     }
   },
   "author": "Seanghay Yath <seanghay.dev@gmail.com>",
