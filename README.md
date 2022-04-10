@@ -4,6 +4,8 @@
 
 A JavaScript library for querying administrative regions in Cambodia including Provinces, Districts, Communes and Villages.
 
+Supports both Node.js, Browser and Deno.
+
 > Forked from [kruyvanna/node-pumi](https://github.com/kruyvanna/node-pumi)
 
 ## Installation
@@ -12,18 +14,18 @@ A JavaScript library for querying administrative regions in Cambodia including P
 npm i pumi
 ```
 
-
 ## Usage in Node.js
 
 ESM
 
 ```js
-import { provinces, districts, communes, villages, all } from 'pumi'
+import { provinces, districts, communes, villages, all } from "pumi";
 ```
 
 CommonJS
+
 ```js
-const { provinces, districts, communes, villages, all } = require('pumi')
+const { provinces, districts, communes, villages, all } = require("pumi");
 ```
 
 ## Import Individual Data
@@ -31,28 +33,42 @@ const { provinces, districts, communes, villages, all } = require('pumi')
 ESM
 
 ```js
-import provinces from 'pumi/provinces'
-import districts from 'pumi/districts'
-import communes from 'pumi/communes'
-import villages from 'pumi/villages'
+import provinces from "pumi/provinces";
+import districts from "pumi/districts";
+import communes from "pumi/communes";
+import villages from "pumi/villages";
 ```
 
 CommonJS
 
 ```js
-const provinces = require('pumi/provinces')
-const districts = require('pumi/districts')
-const communes = require('pumi/communes')
-const villages = require('pumi/villages')
+const provinces = require("pumi/provinces");
+const districts = require("pumi/districts");
+const communes = require("pumi/communes");
+const villages = require("pumi/villages");
 ```
 
 ## Browser
 
 ```js
-import { provinces, districts, communes, villages, all } from 'https://unpkg.com/pumi@latest/dist/main.mjs'
+import {
+  provinces,
+  districts,
+  communes,
+  villages,
+  all,
+} from "https://unpkg.com/pumi@latest/dist/main.mjs";
 
 // Or
-const { provinces, districts, communes, villages, all } = await import("https://unpkg.com/pumi@latest/dist/main.mjs")
+const { 
+  provinces, 
+  districts, 
+  communes, 
+  villages, 
+  all 
+} = await import(
+  "https://unpkg.com/pumi@latest/dist/main.mjs"
+);
 ```
 
 ## Types
@@ -71,6 +87,6 @@ export interface AdministrativeDivision {
   id: string;
   name: LocalizedName;
   unit: AdministrativeUnit;
-  parent?: string
+  parent?: string;
 }
 ```
