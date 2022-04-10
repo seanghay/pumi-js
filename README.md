@@ -44,5 +44,6 @@ export interface AdministrativeDivision {
   id: string;
   name: LocalizedName;
   unit: AdministrativeUnit;
+  parent?: string
 }
 ```
