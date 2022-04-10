@@ -48,7 +48,7 @@ const communes = require("pumi/communes");
 const villages = require("pumi/villages");
 ```
 
-## Browser
+## Browser / Deno
 
 ```js
 import {
