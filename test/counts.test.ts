@@ -3,12 +3,12 @@ import { provinces, districts, communes, villages, all } from '../';
 
 describe('count administrative units', () => {
 
-  it('should return 24 provinces', () => {
+  it("should return 25 provinces", () => {
     expect(25).toBe(provinces.length);
   });
 
-  it("should return 203 districts", () => {
-    expect(203).toBe(districts.length);
+  it("should return 197 districts", () => {
+    expect(197).toBe(districts.length);
   });
 
 
@@ -17,12 +17,12 @@ describe('count administrative units', () => {
   });
   
 
-  it("should return 14,397  villages", () => {
-    expect(14397).toBe(villages.length);
+  it("should return 14372  villages", () => {
+    expect(14372).toBe(villages.length);
   });
   
   it('should return a total of items', () => {
-    expect(all.length).toBe(25 + 203 + 1646 + 14397);
+    expect(all.length).toBe(16240);
   });
   
 });
