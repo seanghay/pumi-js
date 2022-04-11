@@ -2,6 +2,7 @@ import _esbuild from "rollup-plugin-esbuild";
 import { defineBuildConfig } from "unbuild";
 import { Plugin } from "rollup";
 
+//@ts-ignore
 const esbuild = _esbuild.default || _esbuild;
 
 export default defineBuildConfig({
