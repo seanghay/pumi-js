@@ -1,5 +1,4 @@
 import { provinces, districts, communes, villages } from './data'
-
 import { AdministrativeDivision } from "./types";
 
 export * from "./data";
@@ -19,4 +18,3 @@ export const all: AdministrativeDivision[] = sorted([
   ...communes,
   ...villages,
 ]);
-
