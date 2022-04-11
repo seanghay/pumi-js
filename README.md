@@ -5,7 +5,7 @@
 
 A JavaScript library for querying administrative regions in Cambodia including Provinces, Districts, Communes and Villages.
 
-Supports both Node.js, Browser and Deno.
+Supports Node.js, Browser and Deno.
 
 > Forked from [kruyvanna/node-pumi](https://github.com/kruyvanna/node-pumi)
 
