@@ -1,4 +1,8 @@
-import { defineBuildConfig } from 'unbuild';
+import _esbuild from "rollup-plugin-esbuild";
+import { defineBuildConfig } from "unbuild";
+import { Plugin } from "rollup";
+
+const esbuild = _esbuild.default || _esbuild;
 
 export default defineBuildConfig({
   entries: [
@@ -12,5 +16,22 @@ export default defineBuildConfig({
   clean: true,
   rollup: {
     emitCJS: true,
+    esbuild: {
+      minify: true,
+    },
+  },
+  hooks: {
+    "rollup:dts:options": (ctx, options) => {
+      options.plugins = options.plugins!.map(p => {
+        const plugin = (p as Plugin);
+        if (plugin.name === 'esbuild') {
+          return esbuild({ 
+            ...ctx.options.rollup.esbuild,
+            minify: false,
+          })
+        }
+        return plugin;
+      })
+    },
   },
 });
